@@ -32,14 +32,14 @@
     </style>
     <script>
     $(document).ready(function(){
-      $(".preloader").delay(1500).fadeOut();
+      $(".preloader").delay(1000).fadeOut();
     })
     </script>
 </head>
 <body>
     <div class="preloader">
       <div class="loading">
-        <img src="assets/image/loader.gif" width="400" title="https://i.pinimg.com/originals/2c/bb/5e/2cbb5e95b97aa2b496f6eaec84b9240d.gif">
+        <img src="assets/image/loader.gif" width="400">
         
       </div>
     </div>
@@ -107,7 +107,7 @@
                                         
                                             <div class="card" style="height: 110px;width: 110px;">
                                                 <div class="card-body">
-                                                    <img src="assets/image/ig.png" class="mt-2 mb-1" width="50vmax" alt="">
+                                                    <img src="assets/image/instagram.png" title="image from freeicons.io" class="mt-2 mb-1" width="50vmax" alt="">
                                                     <p class="card-text" style="font-size: 12px;">Yournotebook.id</p>
                                                 </div>
                                             </div>
@@ -120,7 +120,7 @@
                                         
                                             <div class="card" style="height: 110px;width: 110px;">
                                                 <div class="card-body">
-                                                    <img src="assets/image/fb.png" class="mt-2 mb-1" width="50vmax" alt="">
+                                                    <img src="assets/image/facebook.png" title="image from freeicons.io" class="mt-2 mb-1" width="50vmax" alt="">
                                                     <p class="card-text" style="font-size: 12px;">@Djavastore jaya sellau</p>
                                                 </div>
                                             </div>
@@ -133,7 +133,7 @@
                                         
                                             <div class="card" style="height: 110px;width: 110px;">
                                                 <div class="card-body">
-                                                    <img src="assets/image/yt.png" class="mt-2 mb-1" width="50vmax" alt="">
+                                                    <img src="assets/image/yutub.png" title="image from freeicons.io" class="mt-2 mb-1" width="50vmax" alt="">
                                                     <p class="card-text" style="font-size: 12px;">Freezemask Channel</p>
                                                 </div>
                                             </div>
@@ -158,7 +158,7 @@
                                         
                                             <div class="card" style="background: #f1582c; height: 110px;width: 110px;">
                                                 <div class="card-body">
-                                                    <img src="assets/image/shop.png" class="mt-2 mb-2" width="50vmax" title="image from freepnglogos.com">
+                                                    <img src="assets/image/shop.png" class="mt-2 mb-2" width="50vmax" title="image from shopee.co.id">
                                                     <p class="card-text" style="font-size: 12px; color: white;">djavastore_shopee</p>
                                                 </div>
                                             </div>
@@ -197,9 +197,26 @@
                     </div>
                 </div>
                 <div style="margin-top: 30px;">
-                    <h6 class="mt-3 mb-1"><b>Produk Best Seller</b></h6>
+                    <h6 class="mt-3 mb-1"><b>Produk Best Seller <font color="red">*</font></b></h6>
                     <!--- Tempat foto disini -->
-                </div>    
+                    <div class="col-md-12">
+                        <div class="containerfoto">
+                            <!-- Foto 1 paling kiri-->
+                            <div class="gridfoto">
+                                <img src="assets/image/1.jpg">
+                            </div>
+                            <!--foto 2 kanan atas-->
+                            <div class="gridfoto">
+                                <img src="assets/image/fotoproduk1.jpg">
+                            </div>
+                            <!-- foto 3 kanan bawah-->
+                            <div class="gridfoto">
+                                <img src="assets/image/1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p align="center" class="footer-custom mt-4" >2020 - Powered by <a href="https://www.wibinx.com">Wibinx.com</a></p>    
             </div>
         </div>
     </div>
@@ -209,6 +226,25 @@
 </html>
 <style>
 
+.containerfoto{
+    width: 100%;
+    height: 250px;
+
+}
+.gridfoto{
+    float: left;
+    width: 50%;
+    height: 125px;
+    padding: 5px;
+}
+.gridfoto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gridfoto:nth-child(1){
+    height: 250px;
+}
 .fontsize {
     font-size: 14px;
 }
